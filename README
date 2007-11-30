@@ -4,42 +4,42 @@ Library and utilties for manipulating GIF graphics,
 with LZW compression support.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  libX11_6-1.1.1-1
+  cygwin-1.5.24-2
+  libX11_6-1.1.3-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.23a-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
   sed-4.1.5-2
 
 Canonical website:
-  http://sourceforge.net/projects/libungif/
+  http://sourceforge.net/projects/giflib/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/libungif/
+  http://downloads.sourceforge.net/giflib/
 
 -------------------------------------------
 
 Build instructions:
-  unpack giflib-4.1.4-X-src.tar.bz2
+  unpack giflib-4.1.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./giflib-4.1.4-X.cygport all
+  cygport ./giflib-4.1.6-X.cygport all
 
 This will create:
-  /usr/src/giflib-4.1.4-X-src.tar.bz2
-  /usr/src/giflib-4.1.4-X.tar.bz2
-  /usr/src/libgif-devel-4.1.4-X.tar.bz2
-  /usr/src/libgif4-4.1.4-X.tar.bz2
+  /usr/src/giflib-4.1.6-X-src.tar.bz2
+  /usr/src/giflib-4.1.6-X.tar.bz2
+  /usr/src/libgif-devel-4.1.6-X.tar.bz2
+  /usr/src/libgif4-4.1.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,57 +76,57 @@ Files included in the binary packages:
   /usr/bin/raw2gif.exe
   /usr/bin/rgb2gif.exe
   /usr/bin/text2gif.exe
-  /usr/share/doc/Cygwin/giflib-4.1.4.README
-  /usr/share/doc/giflib-4.1.4/AUTHORS
-  /usr/share/doc/giflib-4.1.4/BUGS
-  /usr/share/doc/giflib-4.1.4/COPYING
-  /usr/share/doc/giflib-4.1.4/ChangeLog
-  /usr/share/doc/giflib-4.1.4/INSTALL
-  /usr/share/doc/giflib-4.1.4/NEWS
-  /usr/share/doc/giflib-4.1.4/ONEWS
-  /usr/share/doc/giflib-4.1.4/PATENT_PROBLEMS
-  /usr/share/doc/giflib-4.1.4/README
-  /usr/share/doc/giflib-4.1.4/TODO
-  /usr/share/doc/giflib-4.1.4/gif89.txt
-  /usr/share/doc/giflib-4.1.4/html/GifFileType.png
-  /usr/share/doc/giflib-4.1.4/html/gif2bgi.html
-  /usr/share/doc/giflib-4.1.4/html/gif2epsn.html
-  /usr/share/doc/giflib-4.1.4/html/gif2herc.html
-  /usr/share/doc/giflib-4.1.4/html/gif2iris.html
-  /usr/share/doc/giflib-4.1.4/html/gif2ps.html
-  /usr/share/doc/giflib-4.1.4/html/gif2rgb.html
-  /usr/share/doc/giflib-4.1.4/html/gif2rle.html
-  /usr/share/doc/giflib-4.1.4/html/gif2x11.html
-  /usr/share/doc/giflib-4.1.4/html/gif_lib.html
-  /usr/share/doc/giflib-4.1.4/html/gifasm.html
-  /usr/share/doc/giflib-4.1.4/html/gifbg.html
-  /usr/share/doc/giflib-4.1.4/html/gifburst.html
-  /usr/share/doc/giflib-4.1.4/html/gifclip.html
-  /usr/share/doc/giflib-4.1.4/html/gifclrmp.html
-  /usr/share/doc/giflib-4.1.4/html/gifcolor.html
-  /usr/share/doc/giflib-4.1.4/html/gifcomb.html
-  /usr/share/doc/giflib-4.1.4/html/gifcompose.html
-  /usr/share/doc/giflib-4.1.4/html/giffiltr.html
-  /usr/share/doc/giflib-4.1.4/html/giffix.html
-  /usr/share/doc/giflib-4.1.4/html/gifflip.html
-  /usr/share/doc/giflib-4.1.4/html/gifhisto.html
-  /usr/share/doc/giflib-4.1.4/html/gifinter.html
-  /usr/share/doc/giflib-4.1.4/html/gifinto.html
-  /usr/share/doc/giflib-4.1.4/html/gifovly.html
-  /usr/share/doc/giflib-4.1.4/html/gifpos.html
-  /usr/share/doc/giflib-4.1.4/html/gifrotat.html
-  /usr/share/doc/giflib-4.1.4/html/gifrsize.html
-  /usr/share/doc/giflib-4.1.4/html/gifspnge.html
-  /usr/share/doc/giflib-4.1.4/html/giftext.html
-  /usr/share/doc/giflib-4.1.4/html/gifwedge.html
-  /usr/share/doc/giflib-4.1.4/html/icon2gif.html
-  /usr/share/doc/giflib-4.1.4/html/index.html
-  /usr/share/doc/giflib-4.1.4/html/liberror.html
-  /usr/share/doc/giflib-4.1.4/html/raw2gif.html
-  /usr/share/doc/giflib-4.1.4/html/rgb2gif.html
-  /usr/share/doc/giflib-4.1.4/html/rle2gif.html
-  /usr/share/doc/giflib-4.1.4/html/text2gif.html
-  /usr/share/doc/giflib-4.1.4/lzgif.txt
+  /usr/share/doc/Cygwin/giflib-4.1.6.README
+  /usr/share/doc/giflib-4.1.6/AUTHORS
+  /usr/share/doc/giflib-4.1.6/BUGS
+  /usr/share/doc/giflib-4.1.6/COPYING
+  /usr/share/doc/giflib-4.1.6/ChangeLog
+  /usr/share/doc/giflib-4.1.6/INSTALL
+  /usr/share/doc/giflib-4.1.6/NEWS
+  /usr/share/doc/giflib-4.1.6/ONEWS
+  /usr/share/doc/giflib-4.1.6/PATENT_PROBLEMS
+  /usr/share/doc/giflib-4.1.6/README
+  /usr/share/doc/giflib-4.1.6/TODO
+  /usr/share/doc/giflib-4.1.6/gif89.txt
+  /usr/share/doc/giflib-4.1.6/html/GifFileType.png
+  /usr/share/doc/giflib-4.1.6/html/gif2bgi.html
+  /usr/share/doc/giflib-4.1.6/html/gif2epsn.html
+  /usr/share/doc/giflib-4.1.6/html/gif2herc.html
+  /usr/share/doc/giflib-4.1.6/html/gif2iris.html
+  /usr/share/doc/giflib-4.1.6/html/gif2ps.html
+  /usr/share/doc/giflib-4.1.6/html/gif2rgb.html
+  /usr/share/doc/giflib-4.1.6/html/gif2rle.html
+  /usr/share/doc/giflib-4.1.6/html/gif2x11.html
+  /usr/share/doc/giflib-4.1.6/html/gif_lib.html
+  /usr/share/doc/giflib-4.1.6/html/gifasm.html
+  /usr/share/doc/giflib-4.1.6/html/gifbg.html
+  /usr/share/doc/giflib-4.1.6/html/gifburst.html
+  /usr/share/doc/giflib-4.1.6/html/gifclip.html
+  /usr/share/doc/giflib-4.1.6/html/gifclrmp.html
+  /usr/share/doc/giflib-4.1.6/html/gifcolor.html
+  /usr/share/doc/giflib-4.1.6/html/gifcomb.html
+  /usr/share/doc/giflib-4.1.6/html/gifcompose.html
+  /usr/share/doc/giflib-4.1.6/html/giffiltr.html
+  /usr/share/doc/giflib-4.1.6/html/giffix.html
+  /usr/share/doc/giflib-4.1.6/html/gifflip.html
+  /usr/share/doc/giflib-4.1.6/html/gifhisto.html
+  /usr/share/doc/giflib-4.1.6/html/gifinter.html
+  /usr/share/doc/giflib-4.1.6/html/gifinto.html
+  /usr/share/doc/giflib-4.1.6/html/gifovly.html
+  /usr/share/doc/giflib-4.1.6/html/gifpos.html
+  /usr/share/doc/giflib-4.1.6/html/gifrotat.html
+  /usr/share/doc/giflib-4.1.6/html/gifrsize.html
+  /usr/share/doc/giflib-4.1.6/html/gifspnge.html
+  /usr/share/doc/giflib-4.1.6/html/giftext.html
+  /usr/share/doc/giflib-4.1.6/html/gifwedge.html
+  /usr/share/doc/giflib-4.1.6/html/icon2gif.html
+  /usr/share/doc/giflib-4.1.6/html/index.html
+  /usr/share/doc/giflib-4.1.6/html/liberror.html
+  /usr/share/doc/giflib-4.1.6/html/raw2gif.html
+  /usr/share/doc/giflib-4.1.6/html/rgb2gif.html
+  /usr/share/doc/giflib-4.1.6/html/rle2gif.html
+  /usr/share/doc/giflib-4.1.6/html/text2gif.html
+  /usr/share/doc/giflib-4.1.6/lzgif.txt
 
 (libgif4)
   /usr/bin/cyggif-4.dll
@@ -140,6 +140,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 4.1.6-1 -----
+Version bump.
 
 ----- version 4.1.4-2 -----
 Initial release for Cygwin.

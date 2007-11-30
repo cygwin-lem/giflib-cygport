@@ -1,0 +1,12 @@
+DESCRIPTION="GIF manipulation library"
+HOMEPAGE="http://sourceforge.net/projects/giflib/"
+SRC_URI="mirror://sourceforge/giflib/${P}.tar.bz2"
+
+DOCS="ONEWS PATENT_PROBLEMS doc/*.txt"
+HTMLDOCS="doc/*.html doc/*.png"
+
+PKG_NAMES="${PN} libgif4 libgif-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]='--exclude=*.dll usr/bin/ usr/share/doc/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
