@@ -1,6 +1,11 @@
 DESCRIPTION="GIF manipulation library"
 HOMEPAGE="http://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/${P}.tar.bz2"
+PATCH_URI="
+	mirror://portage/media-libs/${PN}/files/${P}-gif2rle.patch
+	mirror://portage/media-libs/${PN}/files/${P}-giffix-null-Extension-fix.patch
+	4.1.6-no-undefined.patch
+"
 
 DOCS="ONEWS PATENT_PROBLEMS doc/*.txt"
 HTMLDOCS="doc/*.html doc/*.png"
@@ -10,3 +15,5 @@ PKG_HINTS="setup lib devel"
 PKG_CONTENTS[0]='--exclude=*.dll usr/bin/ usr/share/doc/'
 PKG_CONTENTS[1]='usr/bin/*.dll'
 PKG_CONTENTS[2]='usr/include/ usr/lib/'
+
+CYGCONF_ARGS="--enable-x11 --disable-gl --disable-rle"
