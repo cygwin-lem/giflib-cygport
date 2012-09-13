@@ -1,5 +1,0 @@
-category: Graphics
-requires: libgcc1 libgif4 libX11_6
-sdesc: "GIF file manipulation library (utilities and docs)"
-ldesc: "Library and utilties for manipulating GIF graphics,
-with LZW compression support."
