@@ -1,6 +1,6 @@
 NAME="giflib"
-VERSION=4.1.6
-RELEASE=11
+VERSION=4.2.1
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="GIF image manipulation library"
 DESCRIPTION="Library and utilties for manipulating GIF graphics, with LZW
@@ -8,8 +8,6 @@ compression support."
 HOMEPAGE="http://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.bz2"
 PATCH_URI="
-	mirror://portage/media-libs/${NAME}/files/${NAME}-4.1.6-gif2rle.patch
-	mirror://portage/media-libs/${NAME}/files/${NAME}-4.1.6-giffix-null-Extension-fix.patch
 	4.1.6-no-undefined.patch
 "
 
@@ -18,8 +16,6 @@ giflib_SUMMARY="GIF image manipulation utilities"
 giflib_CONTENTS='--exclude=*.dll usr/bin/ usr/share/doc/'
 libgif4_CONTENTS="usr/bin/cyggif-4.dll"
 libgif_devel_CONTENTS='usr/include/ usr/lib/'
-
-CYGCONF_ARGS="--enable-x11 --disable-gl --disable-rle"
 
 DOCS="doc/*.txt"
 HTMLDOCS="doc/*.html doc/*.png"
