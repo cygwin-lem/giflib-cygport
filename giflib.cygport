@@ -3,7 +3,7 @@ VERSION=4.1.6
 RELEASE=12
 CATEGORY="Graphics"
 SUMMARY="GIF image manipulation library"
-DESCRIPTION="Library and utilties for manipulating GIF graphics, with LZW
+DESCRIPTION="Library and utilities for manipulating GIF graphics, with LZW
 compression support."
 HOMEPAGE="http://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.bz2"
