@@ -1,25 +1,26 @@
 NAME="giflib"
-VERSION=4.1.6
-RELEASE=12
-CATEGORY="Graphics"
+VERSION=5.1.4
+RELEASE=1
+CATEGORY="Libs"
 SUMMARY="GIF image manipulation library"
 DESCRIPTION="Library and utilities for manipulating GIF graphics, with LZW
 compression support."
 HOMEPAGE="http://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.bz2"
-PATCH_URI="
-	mirror://portage/media-libs/${NAME}/files/${NAME}-4.1.6-gif2rle.patch
-	mirror://portage/media-libs/${NAME}/files/${NAME}-4.1.6-giffix-null-Extension-fix.patch
-	4.1.6-no-undefined.patch
-"
 
-PKG_NAMES="giflib libgif4 libgif-devel"
+PKG_NAMES="giflib libgif7 libgif-devel"
+giflib_CATEGORY="Graphics"
 giflib_SUMMARY="GIF image manipulation utilities"
-giflib_CONTENTS='--exclude=*.dll usr/bin/ usr/share/doc/'
-libgif4_CONTENTS="usr/bin/cyggif-4.dll"
-libgif_devel_CONTENTS='usr/include/ usr/lib/'
-
-CYGCONF_ARGS="--enable-x11 --disable-gl --disable-rle"
+giflib_CONTENTS="
+	usr/bin/gif*
+	usr/share/doc/${NAME}
+	usr/share/man/man1/gif*
+"
+libgif7_CONTENTS="usr/bin/cyggif-7.dll"
+libgif_devel_CONTENTS="
+	usr/include/gif_lib.h
+	usr/lib/libgif.dll.a
+"
 
 DOCS="doc/*.txt"
 HTMLDOCS="doc/*.html doc/*.png"
