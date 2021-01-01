@@ -5,7 +5,7 @@ CATEGORY="Libs"
 SUMMARY="GIF image manipulation library"
 DESCRIPTION="Library and utilities for manipulating GIF graphics, with LZW
 compression support."
-HOMEPAGE="http://sourceforge.net/projects/giflib/"
+HOMEPAGE="https://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.gz"
 
 PATCH_URI+="
