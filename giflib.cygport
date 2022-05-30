@@ -1,12 +1,23 @@
+inherit cmake ninja
+
 NAME="giflib"
-VERSION=5.1.4
+VERSION=5.2.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GIF image manipulation library"
 DESCRIPTION="Library and utilities for manipulating GIF graphics, with LZW
 compression support."
-HOMEPAGE="http://sourceforge.net/projects/giflib/"
-SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.bz2"
+HOMEPAGE="https://sourceforge.net/projects/giflib/"
+SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.gz"
+SRC_URI+="\
+  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/CMakeLists.txt\
+"
+
+PATCH_URI+="\
+  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_coverity.patch\
+  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_html-docs-consistent-ids.patch\
+  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_quantize.patch\
+"
 
 PKG_NAMES="giflib libgif7 libgif-devel"
 giflib_CATEGORY="Graphics"
