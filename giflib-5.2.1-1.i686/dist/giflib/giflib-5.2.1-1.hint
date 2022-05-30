@@ -1,0 +1,6 @@
+category: Graphics
+requires: cygwin libgif7 
+sdesc: "GIF image manipulation utilities"
+ldesc: "Library and utilities for manipulating GIF graphics, with LZW
+compression support."
+test:

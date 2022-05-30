@@ -1,0 +1,8 @@
+category: Graphics
+build-depends: cygport 
+sdesc: "GIF image manipulation utilities"
+ldesc: "Library and utilities for manipulating GIF graphics, with LZW
+compression support."
+skip:
+test:
+homepage: https://sourceforge.net/projects/giflib/

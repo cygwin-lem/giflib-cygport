@@ -1,0 +1,7 @@
+category: Libs
+requires: libgif7 
+sdesc: "GIF image manipulation library"
+ldesc: "Library and utilities for manipulating GIF graphics, with LZW
+compression support."
+external-source: giflib
+test:
