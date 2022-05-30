@@ -19,6 +19,12 @@ PATCH_URI+="\
   https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_quantize.patch\
 "
 
+# Patch files whose names are in a default style of 'git format-patch'
+PATCH_URI+=' '$(\
+  find -maxdepth 1 -type f -name '[0-9][0-9][0-9][0-9]-*.patch' \
+  | sort \
+)
+
 PKG_NAMES="giflib libgif7 libgif-devel"
 giflib_CATEGORY="Graphics"
 giflib_SUMMARY="GIF image manipulation utilities"
