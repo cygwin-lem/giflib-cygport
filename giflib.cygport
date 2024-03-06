@@ -1,22 +1,23 @@
 inherit cmake ninja
 
 NAME="giflib"
-VERSION=5.2.1
+VERSION=5.2.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GIF image manipulation library"
 DESCRIPTION="Library and utilities for manipulating GIF graphics, with LZW
 compression support."
 HOMEPAGE="https://sourceforge.net/projects/giflib/"
+LICENSE="MIT"
 SRC_URI="mirror://sourceforge/giflib/${NAME}-${VERSION}.tar.gz"
 SRC_URI+="\
   https://src.fedoraproject.org/rpms/giflib/raw/f36/f/CMakeLists.txt\
 "
 
 PATCH_URI+="\
-  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_coverity.patch\
-  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_html-docs-consistent-ids.patch\
-  https://src.fedoraproject.org/rpms/giflib/raw/f36/f/giflib_quantize.patch\
+  https://src.fedoraproject.org/rpms/giflib/raw/f40/f/giflib_coverity.patch\
+  https://src.fedoraproject.org/rpms/giflib/raw/f40/f/giflib_html-docs-consistent-ids.patch\
+  https://src.fedoraproject.org/rpms/giflib/raw/f40/f/giflib_quantize.patch\
 "
 
 # Patch files whose names are in a default style of 'git format-patch'
